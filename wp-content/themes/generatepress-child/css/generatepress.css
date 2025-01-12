@@ -6,6 +6,12 @@
  Author URI: http://planty.local/
  Template: generatepress
  Version: 3.5.1
+
+ Fichier CSS à modifier
  */
 
- 
+ /* Personnalisation générale */
+body {
+    background-color: #b1c5a8 !important;
+    font-family: 'Arial', sans-serif;
+}
