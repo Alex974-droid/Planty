@@ -29,4 +29,10 @@ function generatepress_child_enqueue_styles()
 
 }
 
+function register_my_menus() {
+
+    register_nav_menu('Menu-Footer',__( 'Footer Menu' ));
+  }
+  add_action( 'init', 'register_my_menus' );
+
 

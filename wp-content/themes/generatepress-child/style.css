@@ -8,4 +8,66 @@
  Version: 3.5.1
  */
 
+ /* HEADER */
+
+.site-header {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.inside-header {
+    padding:0px
+}
+
+
+.site-header .main-navigation a {
+    color: #000000 !important; /* Couleur du texte */
+}
+
+.site-header .main-navigation ul li:nth-child(2) a {
+    background-color: #DC9F96; /* Couleur d'arrière-plan */
+    color: #ffffff !important; /* Couleur du texte */
+}
+
+header .main-navigation ul li:nth-child(2) a:hover {
+    background-color: #e2b4ad; /* Couleur d'arrière-plan au survol */
+}
+
+
+lia.menu-item a {
+    color: #313332 !important;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 0px;
+    text-align: center;
+ }
+
+ .menu-menu-footer-container {
+
+    justify-content: center;
+
+ }
+
+
+.site-header .header-image 
  
+ {
+    margin-left: 45px;
+    height: 20px;
+    width: 200px;
+    display: flex;
+
+ }
+
+ /* FOOTER */
+footer ul {
+    list-style-type: none;
+    text-align: center;
+  }
+
+footer ul li a {
+    text-decoration: none;
+  }
+
+  
