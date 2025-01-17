@@ -8,6 +8,14 @@
  Version: 3.5.1
  */
 
+ body {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px; /* Taille de base */
+
+}
+
+
+
  /* HEADER */
 
 .site-header {
@@ -30,24 +38,9 @@
     color: #ffffff !important; /* Couleur du texte */
 }
 
-header .main-navigation ul li:nth-child(2) a:hover {
+.site-header .main-navigation ul li:nth-child(2) a:hover {
     background-color: #e2b4ad; /* Couleur d'arrière-plan au survol */
 }
-
-
-lia.menu-item a {
-    color: #313332 !important;
-    display: inline-block;
-    padding: 10px 25px;
-    border-radius: 0px;
-    text-align: center;
- }
-
- .menu-menu-footer-container {
-
-    justify-content: center;
-
- }
 
 
 .site-header .header-image 
@@ -57,10 +50,10 @@ lia.menu-item a {
     height: 20px;
     width: 200px;
     display: flex;
-
  }
 
  /* FOOTER */
+
 footer ul {
     list-style-type: none;
     text-align: center;
@@ -71,3 +64,121 @@ footer ul li a {
   }
 
   
+
+.home-bloc-1 {
+
+    background-color: #ECE2DA;
+}
+
+
+.home-bloc-1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: #ECE2DA; /* Couleur de la courbe */
+    height: 100px; /* Augmentez la hauteur pour accentuer la courbe */
+    border-radius: 0 0 100% 100%; /* Accentue la courbe */
+}
+
+
+
+.home-h1 {
+
+    font-weight: 900; /* Poids du texte */
+    font-size: 50px; /* Taille du texte */
+    text-align: center; /* Centrage du texte */
+    color: #3B8E46;
+    transform: scaleY(0.65); /* Réduit la hauteur des lettres à 80% */
+    text-shadow: 0px 2px 0px #3B8E46;
+}
+
+
+/* Conteneur des colonnes */
+.bottle-container {
+    position: relative;
+    width: 100%; /* Assure que le conteneur prend toute la largeur */
+    height: 500px;
+    display: flex;
+    justify-content: center; /* Centre les colonnes horizontalement */
+    align-items: center; /* Centre les colonnes verticalement */
+    overflow: hidden; /* Évite que les éléments dépassent en cas de redimensionnement */
+}
+
+/* Feuille gauche */
+.leaf-bottle-left {
+    position: absolute;
+    top: 55%; /* Centre verticalement */
+    left: calc(50% - 150px); /* Position fixe par rapport au centre */
+    transform: translate(-50%, -50%); /* Centrage et rotation */
+    z-index: 1; /* Derrière la bouteille */
+    width: 310px; /* Taille fixe */
+    
+}
+
+/* Feuille droite */
+.leaf-bottle-right {
+    position: absolute;
+    top: 55%; /* Centre verticalement */
+    left: calc(50% + 150px); /* Position fixe par rapport au centre */
+    transform: translate(-50%, -50%); /* Centrage et rotation */
+    z-index: 1; /* Derrière la bouteille */
+    width: 310px; /* Taille fixe */
+    
+}
+
+/* Canette */
+.bottle {
+    position: absolute;
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Centrage parfait */
+    z-index: 2; /* Devant les feuilles */
+    width: 340px; /* Taille fixe */
+}
+
+/* BLOC 2 */
+
+.home-bloc-2 {
+    padding-top: 200px;
+    padding-bottom: 80px;
+   
+}
+
+.home-bloc-2 h2 {
+    color: #3B8E46;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center; /* Centre le texte horizontalement */
+    margin: 0 auto; /* Optionnel : ajuste les marges pour un centrage propre */
+   
+}
+
+.home-bloc-2 p {
+    text-align: center; /* Centre le texte horizontalement */
+    margin: 0 auto;
+   
+}
+
+.home-bloc-3 {
+
+    background-color: #ECE2DA;
+    padding-top: 40px;
+}
+
+.home-bloc-3 h2 {
+    color: #D27769;
+    font-weight: 900;
+    font-size: 40px;
+    transform: scaleY(0.65);
+    text-align: center; /* Centre le texte horizontalement */
+    margin: 0 auto; /* Optionnel : ajuste les marges pour un centrage propre */
+    text-shadow: 0px 2px 0px #D27769;
+   
+}
+
+.home-bloc-3 p {
+    text-align: center; /* Centre le texte horizontalement */
+    margin: 0 auto;
+    padding-bottom: 40px;
+   
+}

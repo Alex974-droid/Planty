@@ -12,6 +12,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
+
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<?php wp_head(); ?>
 </head>
