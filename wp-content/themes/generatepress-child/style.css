@@ -71,24 +71,24 @@ footer ul li a {
 }
 
 
-.home-bloc-1::after {
+.home-bloc-1TEST::after {
     content: "";
     position: absolute;
     width: 100%;
-    background-color: #ECE2DA; /* Couleur de la courbe */
-    height: 100px; /* Augmentez la hauteur pour accentuer la courbe */
-    border-radius: 0 0 100% 100%; /* Accentue la courbe */
+    background-color: #ECE2DA; 
+    height: 100px; 
+    border-radius: 0 0 100% 100%; 
 }
 
 
 
-.home-h1 {
+.home-h1test {
 
-    font-weight: 900; /* Poids du texte */
-    font-size: 50px; /* Taille du texte */
-    text-align: center; /* Centrage du texte */
+    font-weight: 900; 
+    font-size: 50px; 
+    text-align: center; 
     color: #3B8E46;
-    transform: scaleY(0.65); /* Réduit la hauteur des lettres à 80% */
+    transform: scaleY(0.65); /* Réduit la hauteur des lettres */
     text-shadow: 0px 2px 0px #3B8E46;
 }
 
@@ -96,11 +96,11 @@ footer ul li a {
 /* Conteneur des colonnes */
 .bottle-container {
     position: relative;
-    width: 100%; /* Assure que le conteneur prend toute la largeur */
+    width: 100%; 
     height: 500px;
     display: flex;
-    justify-content: center; /* Centre les colonnes horizontalement */
-    align-items: center; /* Centre les colonnes verticalement */
+    justify-content: center; 
+    align-items: center; 
     overflow: hidden; /* Évite que les éléments dépassent en cas de redimensionnement */
 }
 
@@ -109,7 +109,7 @@ footer ul li a {
     position: absolute;
     top: 55%; /* Centre verticalement */
     left: calc(50% - 150px); /* Position fixe par rapport au centre */
-    transform: translate(-50%, -50%); /* Centrage et rotation */
+    transform: translate(-50%, -50%); /* Centrage */
     z-index: 1; /* Derrière la bouteille */
     width: 310px; /* Taille fixe */
     
@@ -120,7 +120,7 @@ footer ul li a {
     position: absolute;
     top: 55%; /* Centre verticalement */
     left: calc(50% + 150px); /* Position fixe par rapport au centre */
-    transform: translate(-50%, -50%); /* Centrage et rotation */
+    transform: translate(-50%, -50%); /* Centrage */
     z-index: 1; /* Derrière la bouteille */
     width: 310px; /* Taille fixe */
     
@@ -131,54 +131,109 @@ footer ul li a {
     position: absolute;
     top: 50%; /* Centre verticalement */
     left: 50%; /* Centre horizontalement */
-    transform: translate(-50%, -50%); /* Centrage parfait */
+    transform: translate(-50%, -50%); /* Centrage */
     z-index: 2; /* Devant les feuilles */
     width: 340px; /* Taille fixe */
 }
 
 /* BLOC 2 */
 
-.home-bloc-2 {
-    padding-top: 200px;
+.home-bloc-2TEST {
+    padding-top: 100px;
     padding-bottom: 80px;
    
 }
 
-.home-bloc-2 h2 {
+.home-bloc-2TEEST h2 {
     color: #3B8E46;
     font-size: 30px;
     font-weight: 600;
     text-align: center; /* Centre le texte horizontalement */
-    margin: 0 auto; /* Optionnel : ajuste les marges pour un centrage propre */
+    margin: 0 auto;
    
 }
 
-.home-bloc-2 p {
-    text-align: center; /* Centre le texte horizontalement */
+.home-bloc-2TEST p {
+    text-align: center; 
     margin: 0 auto;
+   
+}
+
+.home-bloc-2 {
+    width: 480px;
+
+}
+
+.home-bloc-2 h2 {
+
+    margin-bottom: 40px;
+
    
 }
 
 .home-bloc-3 {
 
     background-color: #ECE2DA;
-    padding-top: 40px;
+    
 }
 
 .home-bloc-3 h2 {
-    color: #D27769;
+    
     font-weight: 900;
     font-size: 40px;
-    transform: scaleY(0.65);
-    text-align: center; /* Centre le texte horizontalement */
-    margin: 0 auto; /* Optionnel : ajuste les marges pour un centrage propre */
-    text-shadow: 0px 2px 0px #D27769;
+    margin-bottom: 10px;
+    /*transform: scaleY(0.65);*/
    
 }
 
-.home-bloc-3 p {
-    text-align: center; /* Centre le texte horizontalement */
+.home-bloc-3TEST p {
+    text-align: center; 
     margin: 0 auto;
     padding-bottom: 40px;
    
+}
+
+.home-bloc-3-group-banniere {
+
+    gap : 30px;
+    margin-bottom: 30px;
+}
+
+.home-bloc-3-banniere p {
+    margin: 0;
+}
+
+
+
+.home-bloc-3-bloc-bouton {
+
+    margin-top: 50px;
+}
+
+.home-bloc-4-groupe-colonne {
+
+  
+    padding : 70px 70px 30px 70px;
+}
+
+.home-bloc-4 h3 {
+
+    padding-top: 50px;
+
+   
+}
+
+.home-bloc-4-colonne-medias h4 {
+
+    padding-top: 20px;
+    margin-bottom: 0px;
+
+
+}
+
+.home-bloc-4-colonne-medias p {
+
+    margin-bottom: 0px;
+
+
 }
