@@ -33,13 +33,20 @@
     color: #000000 !important; /* Couleur du texte */
 }
 
-.site-header .main-navigation ul li:nth-child(2) a {
+.site-header .main-navigation ul li:last-child a {
     background-color: #DC9F96; /* Couleur d'arrière-plan */
     color: #ffffff !important; /* Couleur du texte */
+    padding: 10px 80px;
 }
 
-.site-header .main-navigation ul li:nth-child(2) a:hover {
-    background-color: #e2b4ad; /* Couleur d'arrière-plan au survol */
+.site-header .main-navigation ul li:last-child a:hover {
+    background-color: #C02E44; /* Couleur d'arrière-plan au survol */
+    font-style: normal;
+}
+
+.site-header .main-navigation ul li a:hover {
+    font-style: italic; /* Texte en italique au survol */
+    
 }
 
 
@@ -53,6 +60,11 @@
  }
 
  /* FOOTER */
+  /*.menu-menu-footer-container {
+    height: 50px;
+    margin: 0;
+ }
+ */
 
 footer ul {
     list-style-type: none;
@@ -64,14 +76,15 @@ footer ul li a {
   }
 
   
+/* BLOC 1 */
 
 .home-bloc-1 {
 
-    background-color: #ECE2DA;
+    padding-top: 50px;
 }
 
-
-.home-bloc-1TEST::after {
+/* COURBE FIN DU BLOC 1 
+.home-bloc-1::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -79,17 +92,23 @@ footer ul li a {
     height: 100px; 
     border-radius: 0 0 100% 100%; 
 }
+*/
 
-
-
-.home-h1test {
+/*
+.home-h1teeeeest {
 
     font-weight: 900; 
     font-size: 50px; 
     text-align: center; 
     color: #3B8E46;
-    transform: scaleY(0.65); /* Réduit la hauteur des lettres */
+    transform: scaleY(0.65); /* Réduit la hauteur des lettres 
     text-shadow: 0px 2px 0px #3B8E46;
+}
+*/
+
+.home-h1 {
+
+    margin-bottom: 50px;
 }
 
 
@@ -159,12 +178,12 @@ footer ul li a {
    
 }
 
-.home-bloc-2 {
-    width: 480px;
+.home-bloc-02 {
+    max-width: 480px;
 
 }
 
-.home-bloc-2 h2 {
+.home-bloc-02 h2 {
 
     margin-bottom: 40px;
 
@@ -204,6 +223,10 @@ footer ul li a {
 }
 
 
+.home-bloc-3-bouton .wp-element-button:hover {
+    background-color: #C02E44 !important;
+
+}
 
 .home-bloc-3-bloc-bouton {
 
@@ -236,4 +259,550 @@ footer ul li a {
     margin-bottom: 0px;
 
 
+}
+
+
+
+
+
+/* PAGE "NOUS RENCONTRER" */
+
+.nous_rencontrer_bloc_1T {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;   
+}
+
+.nous_rencontrer_bloc_01 {
+
+    position: relative; /* Définit le conteneur comme référence */
+    width: 100%; /* Ajuste selon ton besoin */
+    height: 250px; /* Ajuste selon ton besoin */
+   /* overflow: hidden; /* Empêche l'image de déborder */
+}
+
+.nous_rencontrer_bloc_01 p {
+    max-width: 580px;
+
+}
+
+.nous_rencontrer_bloc_1_flowersT {
+
+    position: absolute;
+    top : 10px ;
+    left: 130px; 
+    max-width: 220px; 
+   /* z-index: 2;*/
+}
+
+.nous_rencontrer_bloc_1_flowers {
+
+    position: relative;
+    top : 70px ;
+    right: 450px; 
+    max-width: 250px;
+   /* z-index: 2;*/
+}
+
+
+
+
+.nous_rencontrer_bloc_1T {
+
+    padding : 0px;
+}
+
+.nous_rencontrer_bloc_2_rang {
+
+    gap : 150px;
+    margin-bottom: 50px;
+}
+
+.nous_rencontrer_bloc_2 {
+    position: relative; /* Définit le conteneur comme référence */
+    width: 100%; /* Ajuste selon ton besoin */
+    /*height: 400px; /* Ajuste selon ton besoin */
+   /* overflow: hidden; /* Empêche l'image de déborder */
+   
+}
+.nous_rencontrer_bloc_2_feuille {
+    position: absolute;
+    bottom: -20px; 
+    right: 0; 
+    max-width: 200px; 
+   /* z-index: 2;*/
+   
+}
+
+.nous_rencontrer_bloc_2_feuilleT {
+    position: relative;
+    bottom: 170px;
+    left : 1090px;
+    max-width: 200px;
+    
+  
+   
+}
+
+
+
+/* FORMULAIRE wpcf7-f257-p8-o1 */
+#wpcf7-f257-p8-o1 input[type="text"],
+#wpcf7-f257-p8-o1 input[type="email"],
+#wpcf7-f257-p8-o1 input[type="tel"],
+#wpcf7-f257-p8-o1 input[type="url"],
+#wpcf7-f257-p8-o1 textarea,
+#wpcf7-f257-p8-o1 select {
+    border-radius: 7px; /* Arrondi des champs */
+    padding: 10px; /* Espace intérieur */
+    width: 100%; /* Ajuste à la largeur du conteneur */
+    font-size: 16px; /* Taille du texte */
+    /*border: 1px solid #ccc; /* Bordure par défaut */
+    box-shadow: 0px 4px 14px 0px #0000000A;
+
+}
+
+#wpcf7-f257-p8-o1 label {
+    display: block; /* Assure que le label est bien au-dessus du champ */
+    margin-bottom: 15px; /* Ajoute un espace entre le label et le champ */
+    font-weight: bold; /* Optionnel : met le texte du label en gras */
+}
+
+
+/* Effet au focus (quand l'utilisateur clique dans le champ) */
+#wpcf7-f257-p8-o1 input:focus,
+#wpcf7-f257-p8-o1 textarea:focus {
+    border-color: #E0B9B4; /* Couleur de bordure au focus */
+    border-width: 1px; /* Épaisseur fine de la bordure */
+    border-style: solid;
+    /*outline: none; /* Supprime l'effet de focus par défaut */
+}
+
+/* Bouton de soumission */
+#wpcf7-f257-p8-o1 .wpcf7-submit {
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 15px 70px;
+    background-color: #DC9F96;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Effet au survol du bouton */
+#wpcf7-f257-p8-o1 .wpcf7-submit:hover {
+    background-color: #C02E44 !important; /* Changement de couleur au survol */
+}
+
+/* Bloc message */
+#wpcf7-f257-p8-o1 .bloc_form_message {
+    position: relative;
+    z-index: 2;
+}
+
+
+.feuille_formulaire {
+    position: relative;
+    bottom: 282px; 
+    right: 190px; 
+    max-width: 200px; 
+    z-index: 1;
+ /* overflow: hidden; /* Empêche l'image de déborder */
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Bloc-CommanderTEST {
+    padding : 10 200 10 200;
+}
+.Bloc-Commander h1 {
+   margin-top: 40px;
+   margin-bottom: 60px;
+}
+
+
+
+/* FORMULAIRE COMMANDE wpcf7-f559-p12-o1 */
+
+/* FORMULAIRE wpcf7-f559-p12-o1 */
+#wpcf7-f559-p12-o1 input[type="text"],
+#wpcf7-f559-p12-o1 input[type="email"],
+#wpcf7-f559-p12-o1 input[type="tel"],
+#wpcf7-f559-p12-o1 input[type="url"],
+#wpcf7-f559-p12-o1 textarea,
+#wpcf7-f559-p12-o1 select {
+    border-radius: 7px; /* Arrondi des champs */
+    padding: 10px; /* Espace intérieur */
+    width: 100%; /* Ajuste à la largeur du conteneur */
+    height: 70px;
+    font-size: 16px; /* Taille du texte */
+    box-shadow: 0px 4px 14px 0px #0000000A; /* Effet d'ombre */
+    margin-top: 10px;
+    outline: none; /* Supprime l'effet par défaut */
+}
+
+/* Style des labels */
+#wpcf7-f559-p12-o1TEST label {
+    display: block; /* Assure que le label est bien au-dessus du champ */
+    margin-bottom: 5px; /* Ajoute un espace entre le label et le champ */
+   /* font-weight: bold; */
+}
+
+
+/* Bouton de soumission */
+#wpcf7-f559-p12-o1 .wpcf7-submit {
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 15px 60px;
+    background-color: #DC9F96;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Effet au survol du bouton */
+#wpcf7-f559-p12-o1 .wpcf7-submit:hover {
+    background-color: #C02E44 !important; 
+}
+
+
+
+/* Styles de la ligne d'images */
+/* .image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.image-row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    align-items: center;
+    margin-bottom: 20px;  
+}
+
+.image-item {
+    text-align: center;
+    width: 20%; 
+}
+
+.image-item img {
+    max-width: 180px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.image-item .quantite_commande {
+
+    max-width: 60px;
+    padding: 25px 15px;
+}
+*/
+.image-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 images par ligne en grand écran */
+    gap: 20px; /* Espacement entre les images */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajustement pour tablettes : 2 images par ligne */
+@media (max-width: 1024px) {
+    .image-row {
+        grid-template-columns: repeat(2, 1fr); /* 2 images par ligne */
+        
+    }
+    .image-item img {
+        max-width: 90% !important; 
+        
+    }
+}
+
+/* Ajustement pour mobiles : 1 image par ligne */
+@media (max-width: 600px) {
+    .image-row {
+        grid-template-columns: repeat(1, 1fr); /* 1 image par ligne */
+    }
+}
+
+/* Style des images */
+.image-item {
+    text-align: center; 
+}
+
+.image-item img {
+    max-width: 180px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style des champs de quantité */
+.image-item .quantite_commande {
+    
+    display: block;
+    margin: 0px auto; /* Centre le champ */
+    padding: 10px;
+    width: 60px; /* Ajuste la largeur du champ */
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+#wpcf7-f559-p12-o1 h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+}
+
+
+
+
+.form-column1 h3, 
+.form-column2 h3 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+
+
+.form-column1 p, 
+.form-column2 p {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    
+    
+}
+
+
+.form-column1TT {
+
+    padding-right: 40px;
+}
+
+.form-column2TT {
+
+    border-left: 1px solid #ffffff;
+    padding-left: 40px;
+}
+
+
+
+
+
+
+/* Ligne de séparation##### */
+
+.form-separator {
+    border: none;
+    height: 1px;
+    background-color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+}
+
+
+
+
+/* Mise en page des colonnes */
+
+.form-columnsTT {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+   /* gap: 30px;*/
+    flex-wrap: wrap;
+}
+/*
+.form-column1TT {
+    width: 50%;
+}
+.form-column2TT {
+    width: 50%;
+}
+*/
+.form-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur grand écran */
+    gap: 20px; /* Espacement entre les colonnes */
+}
+
+/* Pour mobile : une seule colonne */
+@media (max-width: 768px) {
+    .form-columns {
+        grid-template-columns: 1fr; /* Une seule colonne */
+    }
+
+    .form-column2 {
+        border-left: none !important;
+        padding-left: 0 !important;
+    }
+}
+
+/* Style des colonnes 
+.form-column1, 
+.form-column2 {
+    padding: 15px;
+    
+}*/
+.form-column1 {
+
+    padding-right: 40px;
+}
+
+.form-column2 {
+
+    border-left: 1px solid #ffffff;
+    padding-left: 40px;
+}
+
+
+
+
+/* Ajustement des labels */
+.form-columnsT label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Centrer le bouton ####*/
+.button-containerTEST {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.wpcf7-submitTEST {
+    display: inline-block;
+    padding: 52px 25px;
+    border-radius: 5px;
+    background-color: #DC9F96;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.TEESTwpcf7-submit:hover {
+    background-color: #C02E44;
+}
+
+
+
+
+/* ############# RESPONSIVE ############# */
+
+/* PAGE NOUS RENCONTRER BLOC 2 */
+/* Pour les écrans de taille moyenne (tablettes) */
+
+@media screen and (max-width: 1280px) {
+    .nous_rencontrer_bloc_2_feuille {
+        max-width: 170px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nous_rencontrer_bloc_2_rang {
+        gap: 100px;
+        margin-bottom: 40px;
+    }
+
+    .nous_rencontrer_bloc_2_feuille {
+         
+        max-width: 140px; 
+       /* z-index: 2;*/
+}
+
+    .nous_rencontrer_bloc_1_flowers {
+
+        top : 10px ;
+        right: 350px; 
+        max-width: 140px !important;
+        max-height: 120px !important;
+}
+}
+
+/* Pour les écrans plus petits (mobiles) */
+@media screen and (max-width: 768px) {
+    .nous_rencontrer_bloc_2_rang {
+        gap: 50px;
+        margin-bottom: 30px;
+    }
+
+    .nous_rencontrer_bloc_2_feuille {
+         
+        max-width: 140px; 
+       /* z-index: 2;*/
+}
+
+    .nous_rencontrer_bloc_1_flowers img {
+
+        top : 60px ;
+        right: 220px; 
+        max-width: 100px !important;
+        height: max-content !important;
+        /* z-index: 2;*/
+}
+
+}
+
+/* Pour les très petits écrans */
+@media screen and (max-width: 480px) {
+    .nous_rencontrer_bloc_2_rang {
+        gap: 20px;
+        margin-bottom: 20px;
+    }
 }
