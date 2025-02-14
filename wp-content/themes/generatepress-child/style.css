@@ -30,22 +30,32 @@
 
 
 .site-header .main-navigation a {
-    color: #000000 !important; /* Couleur du texte */
+    color: #000000 !important; 
+    
+    
 }
 
 .site-header .main-navigation ul li:last-child a {
-    background-color: #DC9F96; /* Couleur d'arrière-plan */
-    color: #ffffff !important; /* Couleur du texte */
+    background-color: #DC9F96; 
+    color: #ffffff !important; 
     padding: 10px 80px;
+    font-weight: 700;
 }
 
 .site-header .main-navigation ul li:last-child a:hover {
-    background-color: #C02E44; /* Couleur d'arrière-plan au survol */
+    background-color: #C02E44; 
     font-style: normal;
 }
 
+.site-header .main-navigation ul li a {
+
+    padding-right: 50px;
+    padding-left: 0px;
+}
+
 .site-header .main-navigation ul li a:hover {
-    font-style: italic; /* Texte en italique au survol */
+    font-style: italic; 
+    
     
 }
 
@@ -58,6 +68,8 @@
     width: 200px;
     display: flex;
  }
+
+
 
  /* FOOTER */
   /*.menu-menu-footer-container {

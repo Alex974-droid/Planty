@@ -141,4 +141,23 @@ add_shortcode('cf7_product_images_acf', 'cf7_generate_product_images_acf');
 
 
 
+function add_admin_link_to_menu($items, $args) {
+    // Vérifier si l'utilisateur est connecté et si c'est le bon menu
+    if (is_user_logged_in() && $args->theme_location == 'primary') { 
+        // Créer le lien "Admin"
+        $admin_link = '<li class="menu-item"><a href="' . esc_url(admin_url()) . '">Admin</a></li>';
+
+        // Séparer les éléments du menu en un tableau
+        $menu_items = explode('</li>', $items);
+
+        // Insérer le lien "Admin" en deuxième position (après le premier élément)
+        array_splice($menu_items, 1, 0, $admin_link);
+
+        // Reconstituer le menu
+        $items = implode('</li>', $menu_items);
+    }
+
+    return $items;
+}
+add_filter('wp_nav_menu_items', 'add_admin_link_to_menu', 10, 2);
 
