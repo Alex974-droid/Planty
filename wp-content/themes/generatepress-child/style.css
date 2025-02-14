@@ -338,34 +338,49 @@ footer ul li a {
     position: relative;
     bottom: 170px;
     left : 1090px;
-    max-width: 200px;
-    
-  
+    max-width: 200px; 
    
 }
 
+.nous_rencontrer_bloc_3 {
+    padding-top: 30px;
+}
+
+.nous_rencontrer_bloc_3 h2 {
+    margin-bottom: 50px;
+}
 
 
-/* FORMULAIRE wpcf7-f257-p8-o1 */
+/* Appliquer uniquement aux champs Nom et Email */
+#wpcf7-f257-p8-o1 input[name="your-name"],
+#wpcf7-f257-p8-o1 input[name="your-email"] {
+    height: 70px !important; /* Augmente la hauteur */
+
+}
+
+/* FORMULAIRE NOUS RENCONTRER wpcf7-f257-p8-o1 */
 #wpcf7-f257-p8-o1 input[type="text"],
 #wpcf7-f257-p8-o1 input[type="email"],
-#wpcf7-f257-p8-o1 input[type="tel"],
-#wpcf7-f257-p8-o1 input[type="url"],
 #wpcf7-f257-p8-o1 textarea,
 #wpcf7-f257-p8-o1 select {
-    border-radius: 7px; /* Arrondi des champs */
-    padding: 10px; /* Espace intérieur */
-    width: 100%; /* Ajuste à la largeur du conteneur */
-    font-size: 16px; /* Taille du texte */
-    /*border: 1px solid #ccc; /* Bordure par défaut */
+    border-radius: 7px;
+    padding: 10px; 
+    width: 100%; 
+    font-size: 16px; 
     box-shadow: 0px 4px 14px 0px #0000000A;
+    cursor: text;
+    resize: none;
+    margin-top: 10px;
+    
 
 }
 
 #wpcf7-f257-p8-o1 label {
     display: block; /* Assure que le label est bien au-dessus du champ */
-    margin-bottom: 15px; /* Ajoute un espace entre le label et le champ */
-    font-weight: bold; /* Optionnel : met le texte du label en gras */
+    margin-bottom: 0px; 
+    font-size: 20px;
+    font-weight: 400px;
+   
 }
 
 
@@ -388,13 +403,12 @@ footer ul li a {
     color: white;
     border: none;
     font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+   
 }
 
 /* Effet au survol du bouton */
 #wpcf7-f257-p8-o1 .wpcf7-submit:hover {
-    background-color: #C02E44 !important; /* Changement de couleur au survol */
+    background-color: #C02E44 !important; 
 }
 
 /* Bloc message */
@@ -410,37 +424,17 @@ footer ul li a {
     right: 190px; 
     max-width: 200px; 
     z-index: 1;
- /* overflow: hidden; /* Empêche l'image de déborder */
-   
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.Bloc-CommanderTEST {
-    padding : 10 200 10 200;
-}
-.Bloc-Commander h1 {
-   margin-top: 40px;
-   margin-bottom: 60px;
+ /* overflow: hidden; /* Empêche l'image de déborder */ 
 }
 
 
 
 /* FORMULAIRE COMMANDE wpcf7-f559-p12-o1 */
+
+.Bloc-Commander h1 {
+    margin-top: 40px;
+    margin-bottom: 60px;
+ }
 
 /* FORMULAIRE wpcf7-f559-p12-o1 */
 #wpcf7-f559-p12-o1 input[type="text"],
@@ -449,21 +443,21 @@ footer ul li a {
 #wpcf7-f559-p12-o1 input[type="url"],
 #wpcf7-f559-p12-o1 textarea,
 #wpcf7-f559-p12-o1 select {
-    border-radius: 7px; /* Arrondi des champs */
-    padding: 10px; /* Espace intérieur */
-    width: 100%; /* Ajuste à la largeur du conteneur */
+    border-radius: 7px; 
+    padding: 10px; 
+    width: 100%; 
     height: 70px;
-    font-size: 16px; /* Taille du texte */
-    box-shadow: 0px 4px 14px 0px #0000000A; /* Effet d'ombre */
+    font-size: 16px; 
+    box-shadow: 0px 4px 14px 0px #0000000A; 
     margin-top: 10px;
-    outline: none; /* Supprime l'effet par défaut */
+    outline: none;
 }
 
 /* Style des labels */
 #wpcf7-f559-p12-o1TEST label {
-    display: block; /* Assure que le label est bien au-dessus du champ */
-    margin-bottom: 5px; /* Ajoute un espace entre le label et le champ */
-   /* font-weight: bold; */
+    display: block;
+    margin-bottom: 5px; 
+   
 }
 
 
@@ -477,8 +471,7 @@ footer ul li a {
     color: white;
     border: none;
     font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+ 
 }
 
 /* Effet au survol du bouton */
@@ -486,43 +479,22 @@ footer ul li a {
     background-color: #C02E44 !important; 
 }
 
-
-
-/* Styles de la ligne d'images */
-/* .image-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
+#wpcf7-f559-p12-o1 .image-item label {
+    display: none;
+}
+#wpcf7-f559-p12-o1TEST .image-item {
+    margin-bottom: 20px !important;
 }
 
-.image-row2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-    align-items: center;
-    margin-bottom: 20px;  
+#wpcf7-f559-p12-o1 h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
 }
 
-.image-item {
-    text-align: center;
-    width: 20%; 
-}
-
-.image-item img {
-    max-width: 180px; 
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.image-item .quantite_commande {
-
-    max-width: 60px;
-    padding: 25px 15px;
-}
-*/
+/* Ligne de 4 images */
 .image-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 images par ligne en grand écran */
@@ -530,6 +502,7 @@ footer ul li a {
     justify-content: center;
     align-items: center;
 }
+
 
 /* Ajustement pour tablettes : 2 images par ligne */
 @media (max-width: 1024px) {
@@ -560,6 +533,7 @@ footer ul li a {
     height: auto;
     display: block;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 /* Style des champs de quantité */
@@ -573,25 +547,6 @@ footer ul li a {
 }
 
 
-
-
-
-
-
-
-
-
-#wpcf7-f559-p12-o1 h2 {
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 30px;
-
-}
-
-
-
-
 .form-column1 h3, 
 .form-column2 h3 {
     color: #ffffff;
@@ -601,31 +556,13 @@ footer ul li a {
 }
 
 
-
 .form-column1 p, 
 .form-column2 p {
+
     color: #ffffff;
     font-size: 20px;
-    font-weight: 400;
-    
-    
+    font-weight: 400; 
 }
-
-
-.form-column1TT {
-
-    padding-right: 40px;
-}
-
-.form-column2TT {
-
-    border-left: 1px solid #ffffff;
-    padding-left: 40px;
-}
-
-
-
-
 
 
 /* Ligne de séparation##### */
@@ -636,40 +573,48 @@ footer ul li a {
     background-color: #ffffff;
     margin-top: 0px;
     margin-bottom: 50px;
-
 }
 
 
 
+/* Mise en page des colonnes (Vos Informations et Livraison) */
 
-/* Mise en page des colonnes */
-
-.form-columnsTT {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-   /* gap: 30px;*/
-    flex-wrap: wrap;
-}
-/*
-.form-column1TT {
-    width: 50%;
-}
-.form-column2TT {
-    width: 50%;
-}
-*/
 .form-columns {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur grand écran */
-    gap: 20px; /* Espacement entre les colonnes */
+ 
 }
+
+.form-column1 {
+    padding-right: 40px;
+   
+}
+
+.form-column2 {
+
+   border-left: 1px solid #ffffff;
+   padding-left: 40px;
+   
+}
+
+
+/* Ajustement des labels */
+.form-columnsT label {
+   display: block;
+   margin-bottom: 5px;
+   font-weight: bold;
+}
+
 
 /* Pour mobile : une seule colonne */
 @media (max-width: 768px) {
     .form-columns {
         grid-template-columns: 1fr; /* Une seule colonne */
+        
+    }
+
+    .form-column1 {
+        padding-right: 0 !important;
     }
 
     .form-column2 {
@@ -677,24 +622,6 @@ footer ul li a {
         padding-left: 0 !important;
     }
 }
-
-/* Style des colonnes 
-.form-column1, 
-.form-column2 {
-    padding: 15px;
-    
-}*/
-.form-column1 {
-
-    padding-right: 40px;
-}
-
-.form-column2 {
-
-    border-left: 1px solid #ffffff;
-    padding-left: 40px;
-}
-
 
 
 
@@ -704,44 +631,6 @@ footer ul li a {
     margin-bottom: 5px;
     font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Centrer le bouton ####*/
-.button-containerTEST {
-    text-align: center;
-    margin-top: 0px;
-}
-
-.wpcf7-submitTEST {
-    display: inline-block;
-    padding: 52px 25px;
-    border-radius: 5px;
-    background-color: #DC9F96;
-    color: white;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.TEESTwpcf7-submit:hover {
-    background-color: #C02E44;
-}
-
-
-
 
 /* ############# RESPONSIVE ############# */
 
