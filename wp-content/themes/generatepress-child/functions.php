@@ -19,59 +19,6 @@ function register_my_menus() {
     add_action( 'init', 'register_my_menus' );
 
 
-
-
-/*
-function cf7_generate_product_images_acf_free() {
-    if (!function_exists('get_field')) {
-        return '<p>Erreur : ACF n\'est pas activé.</p>';
-    }
-
-    $products = array(
-        array('image' => get_field('image_produit_1'), 'name' => get_field('nom_produit_1')),
-        array('image' => get_field('image_produit_2'), 'name' => get_field('nom_produit_2')),
-        array('image' => get_field('image_produit_3'), 'name' => get_field('nom_produit_3')),
-        array('image' => get_field('image_produit_4'), 'name' => get_field('nom_produit_4'))
-    );
-
-    $output = '<div class="image-row">';
-    $count = 1;
-    $found = false;
-    $cf7_fields = '';
-
-    foreach ($products as $product) {
-        if (!empty($product['image'])) {
-            $found = true;
-            $img_url = esc_url($product['image']['url']);
-            $alt_text = !empty($product['name']) ? esc_attr($product['name']) : 'Produit ' . $count;
-
-            // Construction de l'affichage HTML + CF7
-            $output .= '<div class="image-item">
-                            <img src="' . $img_url . '" alt="' . $alt_text . '">
-                            <label for="quantity-' . $count . '">Quantité :</label>
-                            <input type="number" name="quantity-' . $count . '" class="quantite_commande" min="0" value="0">
-                        </div>';
-            
-            // Stocke le champ CF7 correspondant pour l'insertion dans le formulaire CF7
-            $cf7_fields .= '[number quantity-' . $count . ' class:quantite_commande min:0 "0"]' . "\n";
-            $count++;
-        }
-    }
-
-    if (!$found) {
-        return '<p>Aucun produit ajouté.</p>';
-    }
-
-    $output .= '</div>';
-
-    // Retourne le HTML des images + les champs CF7 correctement formatés
-    return $output . '<div style="display:none;">' . do_shortcode($cf7_fields) . '</div>';
-}
-add_shortcode('cf7_product_images_acf_free', 'cf7_generate_product_images_acf_free');
-*/
-
-
-
 // Execution shortcodes dans CF7
 add_filter('wpcf7_form_elements', function($content) {
     return do_shortcode($content);
@@ -89,7 +36,7 @@ add_filter('wpcf7_special_mail_tags', function($output, $name, $html) {
 
 
 
-// Fonction Produits Images CF7
+// Fonction des Produits Images CF7
 function cf7_generate_product_images_acf() {
     if (!function_exists('get_field')) {
         return '<p>Erreur : ACF n\'est pas activé.</p>';
@@ -142,7 +89,7 @@ add_shortcode('cf7_product_images_acf', 'cf7_generate_product_images_acf');
 
 
 function add_admin_link_to_menu($items, $args) {
-    // Vérifier si l'utilisateur est connecté et si c'est le bon menu
+    // Vérifier si l'utilisateur est connecté
     if (is_user_logged_in() && $args->theme_location == 'primary') { 
         // Créer le lien "Admin"
         $admin_link = '<li class="menu-item"><a href="' . esc_url(admin_url()) . '">Admin</a></li>';
