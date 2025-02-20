@@ -27,12 +27,18 @@ body {
 
 .site-header .main-navigation a {
   color: #000000 !important;
+  font-size: 16px;
+}
+
+.site-header .main-navigation ul li:first-child a {
+  font-weight: 700;
+  font-size: 13px;
 }
 
 .site-header .main-navigation ul li:last-child a {
-  background-color: #dc9f96;
+  background-color: var(--wp--preset--color--bouton-nav-rose);
   color: #ffffff !important;
-  padding: 10px 80px;
+  padding: 10px 70px;
   font-weight: 700;
 }
 
@@ -45,6 +51,7 @@ body {
   padding-right: 50px;
   padding-left: 0px;
 }
+
 /*
 .site-header .main-navigation ul li a:hover {
     font-style: italic;     
@@ -73,6 +80,12 @@ footer ul li a {
 }
 
 /* RESPONSIVE DU HEADER */
+@media (max-width: 900px) {
+  .inside-header {
+    text-align: center;
+  }
+}
+
 @media (max-width: 768px) {
   .main-navigation.toggled .main-nav li {
     text-align: center;
@@ -135,7 +148,7 @@ footer ul li a {
 /* BLOC 2 */
 
 .home-bloc-02 {
-  max-width: 480px;
+  max-width: 530px;
 }
 
 .home-bloc-02 h2 {
@@ -143,18 +156,13 @@ footer ul li a {
 }
 
 /* BLOC 3 */
-.home-bloc-3 {
-  background-color: #ece2da;
-}
 
 .home-bloc-3 h2 {
-  font-weight: 900;
-  font-size: 40px;
   margin-bottom: 10px;
 }
 
 .home-bloc-3 p {
-  font-weight: 600;
+  margin-bottom: 40px;
 }
 
 .home-bloc-3-group-banniere {
@@ -172,6 +180,10 @@ footer ul li a {
 
 .home-bloc-3-bloc-bouton {
   margin-top: 50px;
+}
+
+.home-bloc-3-bouton .wp-element-button {
+  padding: 15px 55px;
 }
 
 /* BLOC 4 */
@@ -198,11 +210,6 @@ footer ul li a {
 @media (max-width: 1024px) {
   .wp-block-media-text {
     display: block !important;
-  }
-  .wwp-block-media-text {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) !important; /* 2 colonnes égales */
-    gap: 2px; /* Espace entre les éléments */
   }
 
   .home-bloc-4-groupe-colonne {
@@ -427,21 +434,22 @@ footer ul li a {
 
 /* PAGE "NOUS RENCONTRER" */
 
+.nous_rencontrer_bloc_1 {
+  padding-top: 40px;
+}
+
 .nous_rencontrer_bloc_01 {
   position: relative; /* Définit le conteneur comme référence */
   width: 100%;
   height: 250px;
 }
 
-.nous_rencontrer_bloc_01 p {
-  max-width: 580px;
+.nous_rencontrer_bloc_01 h1 {
+  margin-bottom: 20px;
 }
 
-.nous_rencontrer_bloc_1_flowersT {
-  position: absolute;
-  top: 10px;
-  left: 130px;
-  max-width: 220px;
+.nous_rencontrer_bloc_01 p {
+  max-width: 700px;
 }
 
 .nous_rencontrer_bloc_1_flowers {
@@ -451,31 +459,28 @@ footer ul li a {
   max-width: 250px;
 }
 
-.nous_rencontrer_bloc_1T {
-  padding: 0px;
-}
-
-.nous_rencontrer_bloc_2_rang {
-  gap: 150px;
-  margin-bottom: 50px;
-}
-
 .nous_rencontrer_bloc_2 {
   position: relative; /* Définit le conteneur comme référence */
   width: 100%;
 }
 
-.nous_rencontrer_bloc_2_feuille {
-  position: absolute;
-  bottom: -20px;
-  right: 0;
-  max-width: 200px;
+.nous_rencontrer_bloc_2 h2 {
+  margin-bottom: 40px;
 }
 
-.nous_rencontrer_bloc_2_feuilleT {
-  position: relative;
-  bottom: 170px;
-  left: 1090px;
+.nous_rencontrer_bloc_2_bloc_rang {
+  gap: 150px;
+  margin-bottom: 50px;
+}
+
+.nous_rencontrer_bloc_2_rang {
+  gap: 15px;
+}
+
+.nous_rencontrer_bloc_2_feuille {
+  position: absolute;
+  bottom: -10px;
+  right: 50px;
   max-width: 200px;
 }
 
@@ -528,7 +533,7 @@ footer ul li a {
   margin: 20px auto;
   border-radius: 5px;
   padding: 15px 70px;
-  background-color: #dc9f96;
+  background-color: var(--wp--preset--color--bouton-rose);
   color: white;
   border: none;
   font-size: 16px;
@@ -551,6 +556,11 @@ footer ul li a {
   right: 190px;
   max-width: 200px;
   z-index: 1;
+  overflow: hidden; /* Coupe l’espace supplémentaire */
+}
+
+.nous_rencontrer_bloc_3 > div {
+  padding-bottom: 0 !important;
 }
 
 /* ############# RESPONSIVE ############# */
@@ -560,7 +570,7 @@ footer ul li a {
 
 @media screen and (max-width: 1280px) {
   .nous_rencontrer_bloc_2_feuille {
-    max-width: 170px;
+    max-width: 12%;
   }
 }
 
@@ -570,13 +580,13 @@ footer ul li a {
     right: 350px;
   }
 
-  .nous_rencontrer_bloc_2_rang {
+  .nous_rencontrer_bloc_2_bloc_rang {
     gap: 100px;
     margin-bottom: 40px;
   }
 
   .nous_rencontrer_bloc_2_feuille {
-    max-width: 120px;
+    max-width: 110px;
     transform: rotate(-30deg);
     bottom: -35px;
   }
@@ -591,13 +601,13 @@ footer ul li a {
 
 /* Pour les écrans plus petits (mobiles) */
 @media screen and (max-width: 768px) {
-  .nous_rencontrer_bloc_2_rang {
+  .nous_rencontrer_bloc_2_bloc_rang {
     gap: 50px;
     margin-bottom: 30px;
   }
 
   .nous_rencontrer_bloc_2_feuille {
-    max-width: 110px;
+    max-width: 100px;
   }
 
   .nous_rencontrer_bloc_1_flowers img {
@@ -625,7 +635,7 @@ footer ul li a {
     margin-bottom: 40px;
   }
 
-  .Anous_rencontrer_bloc_2_rang {
+  .Anous_rencontrer_bloc_2_bloc_rang {
     gap: 50px !important;
   }
 
@@ -659,15 +669,19 @@ footer ul li a {
     max-width: 70px !important;
   }
 
+  .nous_rencontrer_bloc_01 p {
+    font-size: 18px !important;
+  }
+
   .anous_rencontrer_bloc_2 h2 {
     margin-bottom: 40px !important;
   }
 
-  .nous_rencontrer_bloc_2_rang {
+  .nous_rencontrer_bloc_2_bloc_rang {
     gap: 50px !important;
   }
 
-  .Tnous_rencontrer_bloc_2_rang {
+  .Tnous_rencontrer_bloc_2_bloc_rang {
     gap: 20px;
     margin-bottom: 20px;
   }
@@ -696,7 +710,7 @@ footer ul li a {
     font-size: 10px !important;
   }
 
-  .Anous_rencontrer_bloc_2_rang {
+  .Anous_rencontrer_bloc_2_bloc_rang {
     gap: 150px;
   }
 
@@ -749,11 +763,11 @@ footer ul li a {
   display: block;
   margin: 20px auto;
   border-radius: 5px;
-  padding: 15px 60px;
-  background-color: #dc9f96;
+  padding: 16px 55px;
+  background-color: var(--wp--preset--color--bouton-rose);
   color: white;
   border: none;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 /* Effet au survol du bouton */
